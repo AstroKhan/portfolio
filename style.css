@@ -1,0 +1,398 @@
+@font-face {
+	font-family: 'Gilroy-Bold';
+	src: url('./fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Gilroy-Medium';
+	src: url('./fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 1445px;
+}
+.container {
+    margin: 0 auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    height: 80px;
+    align-items: center; 
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #828282;
+}
+.nav-item {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+.nav-item:active {
+    color: #070707;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+  }
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+#h1 {
+    font-family: 'Gilroy-Bold';
+    font-size: 47px;
+    line-height: 59px;
+    color: #070707;
+}
+.header-item .fa-bars {
+    position: absolute;
+    display: none;
+}
+.header-item:nth-child(2) {
+    position: relative;
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    right: 30px;
+    color: #070707;
+}
+.header-item:nth-child(3) {
+    transform: rotate(270deg);
+    position: relative;
+    left: 23px;
+    font-family: 'Gilroy-Bold';
+    font-size: 16px;
+    line-height: 20px;
+    color: #070707;
+}
+.ru {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.eng {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.ru:active {
+    color: #828282;
+}
+.eng:active {
+    color: #828282;
+}
+
+.avatar {
+    margin: 0 auto;
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.about {
+    width: 70%;
+    height: 506px;
+    margin: 0 auto;
+    text-align: center;
+    background: #F6F6F6;
+    display: flex;
+    margin-top: 60px;
+}
+.about-items {
+    display: inline-block;
+    margin: auto;
+}
+
+.about-items h2 {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+}
+.about-items p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.skills {
+    margin: 100px auto;
+    width: 70%;
+    text-align: center;
+}
+
+.skills h2 {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+}
+.skills p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 80px;
+}
+.skills h5 {
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.skill-elements {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+}
+
+.skill-icon i {
+    font-size: 70px;
+
+}
+.skill-icon .fa-html5 {
+    color: rgb(207, 56, 56);
+}
+.skill-icon .fa-css3-alt {
+    color: rgb(48, 68, 221);
+}
+.skill-icon .fa-js {
+    color: rgb(230, 207, 33);
+}
+.skill-icon .fa-react {
+    color: rgb(28, 160, 231);
+}
+.skill-stars {
+
+}
+
+.portfolio {
+    text-align: center;
+    width: 1445px;
+    height: 2253px;
+    background: #F6F6F6;
+}
+.portfolio h2 {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    display: inline-block;
+    margin-top: 112px;
+    margin-bottom: 47px;
+}
+.portfolio-text {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+.fashion-store {
+}
+
+.braun {
+}
+
+.contacts {
+    height: 622px;
+    text-align: center;
+}
+.contacts h2 {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    margin-top: 114px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.contacts .contacts-p {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.contacts .contacts-p2 {
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
+.sendMessage-btn {
+    background-color: #070707;
+    color: #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.contacts-icons {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+.contacts-icon {
+    font-size: 45px;
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 375px;
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+    }
+
+    .header-item .fa-bars {
+        position: relative;
+        display: block;
+        font-size: 25px;
+    }
+    .header-item p {
+        position: relative;
+        display: block;
+        left: 84px;
+        margin-top: 20px;
+    }
+    #h1 {
+        position: relative;
+        left: 48px;
+    }
+    .switch-lang {
+        display: none;
+        position: absolute;
+    }
+
+    header {
+        display: block;
+        justify-content: center;
+    }
+    
+    .header {
+        width: 70%;
+        display: block;
+        margin: 40px 0;
+    }
+
+    .portfolio {
+        text-align: center;
+        width: 375px;
+        height: 1118px;
+        background: #F6F6F6;
+    }
+    .portfolio img {
+        text-align: center;
+        width: 316px;
+        height: 176px;
+        background: #F6F6F6;
+    }
+
+    .skill-elements {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contacts-icons {
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+
+    /* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    border: none;
+    position: absolute;
+    left: 300px;
+    top: -125px;
+  }
+  
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+    left: 180px;
+    top: -90px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .dropdown:hover .dropbtn {background-color: #000000; color: rgb(255, 255, 255);}
+}
