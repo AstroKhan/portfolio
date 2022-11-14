@@ -202,7 +202,10 @@ header {
     color: rgb(28, 160, 231);
 }
 .skill-stars {
-
+    margin-top: 40px;
+}
+.star {
+    color: gray;
 }
 
 .portfolio {
