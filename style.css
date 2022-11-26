@@ -202,10 +202,46 @@ header {
     color: rgb(28, 160, 231);
 }
 .skill-stars {
-    margin-top: 40px;
+    margin-top: 10px;
 }
-.star {
+/* .star {
     color: gray;
+} */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.rating input {
+    display: none;
+}
+label {
+    position: relative;
+    color: yellow;
+    font-size: 32px;
+    cursor: pointer;
+}
+label:before {
+    content: '★';
+    position: absolute;
+    opacity: 0;
+}
+label:hover::before,
+label:hover ~ label::before {
+    opacity: 1 !important;
+}
+ 
+input:checked + label::before,
+input:checked ~ label::before {
+    opacity: 1;
+}
+/* ----------------- */
+.rating:hover input:checked ~ label::before {
+    opacity: 0.3;
+}
+.rating input:checked ~ label::before {
+    opacity: 1;
 }
 
 .portfolio {
@@ -230,11 +266,6 @@ header {
     text-decoration-line: underline;
     margin-top: 45px;
     margin-bottom: 100px;
-}
-.fashion-store {
-}
-
-.braun {
 }
 
 .contacts {
